@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improve Your English</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1> Improve Your English </h1>
+    </header>
+
+    <main>
+        <section class="challenge">
+            <h1>
+                {{lista[0]}}
+            </h1>
+        </section>
+        
+        <section class="phrase">
+            <p>
+                {{lista[1]}}
+            </p>            
+        </section>
+        <section class="answer">
+            <p>
+                {{lista[2]}}
+            </p>
+        </section>
+
+        <section class="new-word">
+            <form method="post">
+                <button type="submit"> New Word </button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            made by Bernardo Leinig C Boiteux
+        </p>
+    </footer>
+
+</body>
+</html>
